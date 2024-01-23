@@ -1,0 +1,14 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/julianolaviano/UC Merced CSE Projects/CSE030 Tic-Tac-Toe AI'
+echo
+echo Your project includes headers that are not allowed
+echo Use \"make force\" to attempt the build anyway
+echo
+false
+g++ main.cpp -g -I. -o app
+rm -rf ~/workspace/.theia/
+mkdir ~/workspace/.theia/
+echo '{\n "version": "0.2.0", \n "configurations": [\n {\n "type": "lldb",\n "request": "launch",\n "name": "Debug Current",\n "program": "/Users/julianolaviano/UC Merced CSE Projects/CSE030 Tic-Tac-Toe AI/app",\n "args": [],\n "cwd": "/Users/julianolaviano/UC Merced CSE Projects/CSE030 Tic-Tac-Toe AI"\n }\n ]\n }' > ~/workspace/.theia/launch.json
+ 
+make: Leaving directory `/Users/julianolaviano/UC Merced CSE Projects/CSE030 Tic-Tac-Toe AI'
+ 
